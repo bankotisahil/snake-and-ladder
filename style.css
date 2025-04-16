@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+        background-image: url('sn.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 350px;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #f0f0f0;
+
+}
+
+
+
+#board{
+    background: yellowgreen;
+    width: 40vmin;
+    height: 20vmin;
+    justify-content: center;
+    margin-top: 620px;
+    display: flex;
+    border-radius: 40px;   
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+    overflow: hidden;
+
+}
+
+#board2{
+    background: red;
+    width: 40vmin;
+    height: 20vmin;
+    margin-top: 620px;
+    justify-content: center;
+    display: flex;
+    border-radius: 40px;
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+    overflow: hidden;
+}
+
+#board:hover{
+    transform: scale(1.05);
+}
+#board2:hover{
+    transform: scale(1.05);
+}
+
+#board img{
+    object-fit: cover; /* Ensures the image covers the entire board area */
+    border-radius: 40px; /* Matches the board's border radius */
+    border-color: black;
+}
+
+#board2 img{
+    object-fit: cover; /* Ensures the image covers the entire board area */
+    border-radius: 40px; /* Matches the board's border radius */
+}
+
+#bombBtn {
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('sn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0px;
+}

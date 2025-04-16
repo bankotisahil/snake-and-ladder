@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button id="bombBtn">🔊</button>
+
+<audio id="bgAudio" autoplay loop>
+    <source src="intromusic.mp3" type="audio/mpeg">
+</audio>
+<div class="main">
+    <div class="text">
+        <p><h1>Select any one Option</h1></p>
+    </div>  
+    <div class="body">
+        <div id="board">
+            <a href="mhuman.html">
+                <img src="he.png" alt="Clickable Image" width="390px">
+            </a>
+        </div>
+        <div id="board2">
+            <a href="mcomputer.html" >
+                <img src="co.png" alt="Clickable Image" width="430px" >
+            </a>
+        </div>
+    </div>
+    
+</div>
+
+    
+    <script>
+        const audio = document.getElementById("bgAudio");
+        const bombBtn = document.getElementById("bombBtn");
+    
+        bombBtn.addEventListener("click", () => {
+            audio.muted = !audio.muted;
+        });
+    </script>
+    
+</body>
+</html>
